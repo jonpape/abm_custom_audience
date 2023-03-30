@@ -62,7 +62,6 @@ def app():
     st.set_page_config(
         page_title="ABM Custom Audience Creator",
         page_icon="📝",
-        layout="wide",
         initial_sidebar_state="expanded",
         )
     st.title('ABM Custom Audience Creator')
