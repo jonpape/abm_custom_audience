@@ -59,7 +59,13 @@ def search_and_capture(query):
     return pd.DataFrame(captured_values, columns=['Query', 'URL'])
 
 def app():
-    st.title('Google ABM Custom Audience Creator')
+    st.set_page_config(
+        page_title="ABM Custom Audience Creator",
+        page_icon="📝",
+        layout="wide",
+        initial_sidebar_state="expanded",
+        )
+    st.title('ABM Custom Audience Creator')
     st.markdown('This tool will help you create a custom audience for Google Ads based on your ABM target account. ' + \
                 'The logic is if you start with a common term that an employee would search for, like "OHSU intranet", ' + \
                 'you can then expand the audience by adding more terms that are related to the account. ')
@@ -67,7 +73,7 @@ def app():
                 'came from the geographic locations we know the target account is located. Second, we noticed that ' + \
                 'we were able to find new target account locations by researching the geographic areas we ' + \
                 'saw impressions from in the campaign results.')
-    st.markdown('Add these queries to your Google Ads Custom Audience. (takes about 1 minute to complete). ' + \
+    st.markdown('Add these queries to your Google Ads Custom Audience. Program takes about 1 minute to complete. ' + \
                 'Start with an employee related term, like "OHSU intranet" or "OHSU employee" and then add more terms to ' + \
                 'expand the audience. I would recommend a extremely targeted list of 30 keywords than a list that includes ' + \
                 'keywords that are too broad. For example, "OHSU intranet" is a good starting point, but "OHSU" is too broad. ' + \

@@ -2,7 +2,7 @@ import streamlit as st
 
 st.write("# AMB Custom Audience Creator")
 
-st.write("The ABM custom audience creator is based on several assumptions about how Google displays Related keyword links.")
+st.write("The ABM custom audience creator is based on several assumptions about how Google displays related keyword links.")
 
 st.write("""
 - The related keywords are not based on links from the landing pages of the original link. If you observe several search results, you will see that they include competitors, related searches, and refined searches (additional tokens).
