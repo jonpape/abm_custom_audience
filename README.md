@@ -1,1 +1,6 @@
-# abm_custom_audience
+# Google ABM Custom Audience Creator
+This tool will help you create a custom audience for Google Ads based on your ABM target account. The logic is if you start with a common term that an employee would search for, like "OHSU intranet", you can then expand the audience by adding more terms that are related to the account.
+
+In initial experiements, we noticed two interesting results. First, more that 90% of all impressions came from the geographic locations we know the target account is located. Second, we noticed that we were able to find new target account locations by researching the geographic areas we saw impressions from in the campaign results.
+
+Add these queries to your Google Ads Custom Audience. (takes about 1 minute to complete). Start with an employee related term, like "OHSU intranet" or "OHSU employee" and then add more terms to expand the audience. I would recommend a extremely targeted list of 30 keywords than a list that includes keywords that are too broad. For example, "OHSU intranet" is a good starting point, but "OHSU" is too broad. Create a Custom Audience for each account you would like to target. Review the results below before adding the keywords to your custom audience.

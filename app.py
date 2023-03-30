@@ -79,9 +79,10 @@ def app():
         captured_df = search_and_capture(query)
         output = captured_df.to_html(escape=False, formatters=dict(URL=make_clickable))
         st.markdown(output, unsafe_allow_html=True)
-        st.markdown('App created by [Jonathan Pape](https://www.linkedin.com/in/jonpape/). Jon was recently laid off ' +\
-                    'from his job at Google as a Senior Global Paid Media Manager for Mandiant. He is now available for ' +\
-                    'consulting work. If you would like to hire Jon, please reach out to him on LinkedIn.')
+        st.markdown('App created by [Jonathan Pape](https://www.linkedin.com/in/jonpape/).')
+        st.markdown('Jon was recently laid off from his job at Google as a Senior Global Paid Media ' + \
+                    'Manager for Mandiant. He is now available for consulting work. If you would like to ' + \
+                    'hire Jon, please reach out to him on LinkedIn.')
 
 if __name__ == '__main__':
     app()
